@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+	. $(brew --prefix)/etc/bash_completion
+fi
+
+# Case-insensitive tab completion
+# http://superuser.com/questions/90196/case-insensitive-tab-completion-in-bash
+bind "set completion-ignore-case on"
+bind "set show-all-if-ambiguous on"
+
+# Enable colors
+export CLICOLOR=1
+export HOMEBREW_GITHUB_API_TOKEN=214d71cb38f2b0477f839383847a08b2b6c419a0
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+
+alias ll='ls -l'
