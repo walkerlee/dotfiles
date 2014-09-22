@@ -23,6 +23,9 @@ ln -s $APPS_PATH/oh-my-fish                $HOME/.oh-my-fish
 ln -s $APPS_PATH/vim                       $HOME/.vim
 ln -s $APPS_PATH/vim/vimrc                 $HOME/.vimrc
 
-# manger vim plugins
+# init git submodule
+git submodule init
+git submodule update
+
+# install vim plugins
 vim +PluginInstall +qall
-vim +PluginClean! +qall
