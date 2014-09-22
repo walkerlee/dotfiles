@@ -8,7 +8,6 @@
 	smudge = git-media-smudge %f
 [core]
 	excludesfile = /Users/walkerlee/.gitignore_global
-	editor = /usr/bin/vim
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

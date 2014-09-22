@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BASE_PATH=$(dirname $(cd $(dirname $0); pwd -P))
+BASE_PATH=$(dirname $(cd $(dirname $0); pwd))
 APPS_PATH=$BASE_PATH/apps
 
 # remove dotfiles
@@ -24,8 +24,7 @@ ln -s $APPS_PATH/vim                       $HOME/.vim
 ln -s $APPS_PATH/vim/vimrc                 $HOME/.vimrc
 
 # init git submodule
-git submodule init
-git submodule update
+git submodule update --init --recursive
 
 # install vim plugins
 vim +PluginInstall +qall
