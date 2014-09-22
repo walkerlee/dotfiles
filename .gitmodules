@@ -1,21 +1,6 @@
-[submodule "fish/oh-my-fish"]
-	path = oh-my-fish
+[submodule "apps/oh-my-fish"]
+	path = apps/oh-my-fish
 	url = https://github.com/bpinto/oh-my-fish.git
-[submodule "vim/bundle/vim-pathogen"]
-	path = vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/molokai"]
-	path = vim/bundle/molokai
-	url = https://github.com/tomasr/molokai.git
-[submodule "vim/bundle/bufexplorer"]
-	path = vim/bundle/bufexplorer
-	url = https://github.com/jlanzarotta/bufexplorer.git
-[submodule "vim/bundle/taglist.vim"]
-	path = vim/bundle/taglist.vim
-	url = https://github.com/emnh/taglist.vim.git
-[submodule "vim/bundle/SrcExpl"]
-	path = vim/bundle/SrcExpl
-	url = https://github.com/wesleyche/SrcExpl.git
-[submodule "vim/bundle/Trinity"]
-	path = vim/bundle/Trinity
-	url = https://github.com/wesleyche/Trinity.git
+[submodule "apps/vim/bundle/Vundle.vim"]
+	path = apps/vim/bundle/Vundle.vim
+	url = https://github.com/gmarik/Vundle.vim.git

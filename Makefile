@@ -1,3 +1,6 @@
+mkfile_path := $(abspath $(lastword $(MAKEFILE_LIST)))
+current_dir := $(dir $(mkfile_path))
+
 usage:
 	@echo "usage:"
 	@echo "  make install"
@@ -5,9 +8,8 @@ usage:
 
 install:
 	@echo "Install dotfiles..."
-	@./install.sh
+	@$(current_dir)./bin/install.sh
 
 update:
 	@echo "Update dotfiles..."
-	@git pull
-	@git submodule foreach git pull
+	@$(current_dir)./bin/update.sh

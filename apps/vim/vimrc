@@ -1,0 +1,95 @@
+set shell=/bin/bash
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tomasr/molokai'
+Plugin 'emnh/taglist.vim'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'wesleyche/SrcExpl'
+Plugin 'wesleyche/Trinity'
+"Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Auto reload vimrc when editing it
+autocmd! bufwritepost .vimrc source ~/.vimrc
+
+"colorscheme molokai
+syntax on
+
+" setting backspace
+set backspace=indent,eol,start
+
+set cursorline
+set number
+set hlsearch
+
+set t_Co=256
+set showcmd		" Show (partial) command in status line.
+set tabstop=4
+set shiftwidth=4
+set hidden
+set nostartofline
+set autoindent
+set cindent
+set cinoptions=:0.5s,=0.5s
+set laststatus=2
+
+" setting encoding
+set fileencodings=utf-8,big5,euc-jp,gbk,euc-kr,utf-bom,iso8859-1
+set encoding=utf-8
+set termencoding=utf-8
+
+" [Setting keymap]
+nmap <C-N> :set nu!<CR>
+
+nmap <silent> <F2> :call ToggleMouse()<CR>
+" <F3> and <F4> was reserved for SrcExpl
+nmap <silent> <F5> :bprevious<CR>
+nmap <silent> <F6> :bnext<CR>
+nmap <silent> <F7> :set hls!<CR>
+" Open and close all the three plugins on the same time 
+nmap <silent> <F8>  :TrinityToggleAll<CR> 
+" Open and close the Source Explorer separately 
+nmap <silent> <F9>  :TrinityToggleSourceExplorer<CR> 
+" Open and close the Taglist separately 
+nmap <silent> <F10> :TrinityToggleTagList<CR> 
+" Open and close the NERD Tree separately 
+nmap <silent> <F11> :TrinityToggleNERDTree<CR> 
+nmap <F12> \be
+
+" [Functions]
+function! ToggleMouse()
+	if &mouse == 'a'
+		set mouse=
+		echo "Mouse usage disabled"
+	else
+		set mouse=a
+		echo "Mouse usage enabled"
+	endif
+endfunction
