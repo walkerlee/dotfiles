@@ -28,3 +28,7 @@ git submodule update --init --recursive
 
 # install vim plugins
 vim +PluginInstall +qall
+
+# compile YCM
+cd $HOME/.vim/bundle/YouCompleteMe/
+./install.sh --clang-completer
