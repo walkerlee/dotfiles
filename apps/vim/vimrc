@@ -17,7 +17,7 @@ Plugin 'emnh/taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'wesleyche/SrcExpl'
 Plugin 'wesleyche/Trinity'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'klen/python-mode'
 Plugin 'dag/vim-fish'
@@ -42,7 +42,7 @@ filetype plugin indent on    " required
 " Auto reload vimrc when editing it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 
-colorscheme molokai
+:silent! colorscheme molokai
 syntax on
 
 " setting backspace

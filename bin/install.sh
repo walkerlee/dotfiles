@@ -11,6 +11,9 @@ rm -f  $HOME/.hgignore_global                       # mercurial
 rm -rf $HOME/.oh-my-fish                            # oh-my-fish
 rm -rf $HOME/{.vim,.vimrc}                          # vim
 
+# create essential folder(s)
+mkdir -p $HOME/.config/fish
+
 # link dotfiles
 ln -s $APPS_PATH/bash/bash_profile         $HOME/.bash_profile
 ln -s $APPS_PATH/bash/bashrc               $HOME/.bashrc
@@ -30,5 +33,5 @@ git submodule update --init --recursive
 vim +PluginInstall +qall
 
 # compile YCM
-cd $HOME/.vim/bundle/YouCompleteMe/
-./install.sh --clang-completer
+#cd $HOME/.vim/bundle/YouCompleteMe/
+#./install.sh --clang-completer
