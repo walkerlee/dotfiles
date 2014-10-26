@@ -15,3 +15,8 @@ export HOMEBREW_GITHUB_API_TOKEN=214d71cb38f2b0477f839383847a08b2b6c419a0
 export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
 
 alias ll='ls -l'
+
+# For Ubuntu/Debian
+if [ -f /etc/skel/.bashrc ]; then
+	. /etc/skel/.bashrc
+fi
