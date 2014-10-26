@@ -18,7 +18,7 @@ set fish_plugins brew subl python localhost
 # Environment variable
 
 # Make vim the default editor
-set -x EDITOR                    "vim";
+set -x EDITOR                    "vim"
 
 # Prefer US English and use UTF-8
 set -x LANG                      "en_US.UTF-8"
@@ -29,12 +29,16 @@ set -x HOMEBREW_CASK_OPTS        "--appdir=/Applications"
 set -x HOMEBREW_GITHUB_API_TOKEN "214d71cb38f2b0477f839383847a08b2b6c419a0"
 
 set -x GOPATH                    "$HOME/.go"
+set -x ANDROID_HOME              "/usr/local/opt/android-sdk"
 
 # Don’t save the log after quitting less
 set -x LESSHISTFILE              "/dev/null"
 
 # Always enable colored `grep` output
 set -x GREP_OPTIONS              "--color=auto"
+
+# Add `ebook-convert` to PATH
+set -x PATH                      $PATH /Applications/calibre.app/Contents/MacOS
 
 # Less Colors for Man Pages
 set -x LESS_TERMCAP_mb \e'[01;31m'       # begin blinking
