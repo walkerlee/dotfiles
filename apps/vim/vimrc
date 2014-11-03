@@ -21,6 +21,7 @@ Plugin 'wesleyche/Trinity'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'klen/python-mode'
 Plugin 'dag/vim-fish'
+Plugin 'honza/dockerfile.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
