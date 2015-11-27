@@ -26,7 +26,6 @@ set -x LC_ALL                    "en_US.UTF-8"
 
 # Link Homebrew casks in `/Applications` rather than `~/Applications`
 set -x HOMEBREW_CASK_OPTS        "--appdir=/Applications"
-set -x HOMEBREW_GITHUB_API_TOKEN "214d71cb38f2b0477f839383847a08b2b6c419a0"
 
 set -x GOPATH                    "$HOME/.go"
 set -x ANDROID_HOME              "/usr/local/opt/android-sdk"
