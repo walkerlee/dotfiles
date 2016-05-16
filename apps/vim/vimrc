@@ -15,13 +15,12 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tomasr/molokai'
 Plugin 'emnh/taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
-Plugin 'wesleyche/SrcExpl'
-Plugin 'wesleyche/Trinity'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'Lokaltog/vim-powerline'
 Plugin 'klen/python-mode'
 Plugin 'dag/vim-fish'
 Plugin 'honza/dockerfile.vim'
+Plugin 'fatih/vim-go'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,14 +78,6 @@ nmap <silent> <F2> :call ToggleMouse()<CR>
 nmap <silent> <F5> :bprevious<CR>
 nmap <silent> <F6> :bnext<CR>
 nmap <silent> <F7> :set hls!<CR>
-" Open and close all the three plugins on the same time 
-nmap <silent> <F8>  :TrinityToggleAll<CR> 
-" Open and close the Source Explorer separately 
-nmap <silent> <F9>  :TrinityToggleSourceExplorer<CR> 
-" Open and close the Taglist separately 
-nmap <silent> <F10> :TrinityToggleTagList<CR> 
-" Open and close the NERD Tree separately 
-nmap <silent> <F11> :TrinityToggleNERDTree<CR> 
 nmap <F12> \be
 
 " [Functions]
