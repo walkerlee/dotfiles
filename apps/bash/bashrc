@@ -11,7 +11,7 @@ bind "set show-all-if-ambiguous on"
 
 # Enable colors
 export CLICOLOR=1
-export PATH='/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+export PATH='/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin'
 
 alias ll='ls -l'
 
