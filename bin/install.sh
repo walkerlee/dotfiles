@@ -21,7 +21,7 @@ ln -s $APPS_PATH/fish/config.fish          $HOME/.config/fish/config.fish
 ln -s $APPS_PATH/git/gitconfig             $HOME/.gitconfig
 ln -s $APPS_PATH/git/gitignore_global      $HOME/.gitignore_global
 ln -s $APPS_PATH/mercurial/hgignore_global $HOME/.hgignore_global
-ln -s $APPS_PATH/oh-my-fish                $HOME/.local/share/omf/
+ln -s $APPS_PATH/oh-my-fish                $HOME/.local/share/omf
 ln -s $APPS_PATH/vim                       $HOME/.vim
 ln -s $APPS_PATH/vim/vimrc                 $HOME/.vimrc
 
