@@ -12,7 +12,7 @@ rm -rf $HOME/.local/share/omf                       # oh-my-fish
 rm -rf $HOME/{.vim,.vimrc}                          # vim
 
 # create essential folder(s)
-mkdir -p $HOME/.config/fish
+mkdir -p $HOME/{.config/fish,.local/share}
 
 # link dotfiles
 ln -s $APPS_PATH/bash/bash_profile         $HOME/.bash_profile
